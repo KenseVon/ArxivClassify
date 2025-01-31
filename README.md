@@ -41,18 +41,18 @@ project/
 请确保你已经安装了必要的 Python 依赖。你可以通过以下命令安装：
 ```bash
 pip install -r requirements.txt
-
+```
 或者，手动安装以下库：
-
+```
 pip install imaplib argparse re os json datetime
-
+```
 🔑 配置邮箱
 
 在 main.py 中，填写你的邮箱账号和授权码：
-
+```
 email_user = "你的邮箱@example.com"
 email_pass = "你的邮箱授权码"
-
+```
 确保你的邮箱开启了 IMAP 服务。
 
 📖 使用方法
@@ -62,33 +62,33 @@ email_pass = "你的邮箱授权码"
 1. 获取最新邮件
 
 从邮箱中获取最新的 ArXiv 邮件并保存为 XML 文件：
-
+```
 python main.py --fetch-email
-
+```
 2. 解析 XML 文件
 
 将保存的 XML 文件解析为 JSON 文件：
-
+```
 python main.py --extract-data --file downloads/example.xml
-
+```
 3. 分析论文摘要
 
 对 JSON 文件中的论文摘要进行相关性分析：
-
+```
 python main.py --analyze-data --file downloads/example.json
-
+```
 4. 生成 Markdown 文件
 
 将论文信息从 JSON 文件转换为 Markdown 格式：
-
+```
 python main.py --generate-md --file downloads/example.json
-
+```
 5. 执行完整流程
 
 一键完成获取邮件、解析、分析和生成 Markdown 的完整流程：
-
+```
 python main.py --all
-
+```
 📌 参数说明
 
 参数名	说明
@@ -113,9 +113,9 @@ Q1: 邮箱登录失败怎么办？
 Q2: 如何修改邮箱文件夹？
 
 在 main.py 中，修改 folder_name 的值：
-
+```
 folder_name = '&UXZO1mWHTvZZOQ-/arxiv'  # 修改为你的文件夹名称
-
+```
 Q3: 如何调试分析问题？
 
 你可以在每个函数中添加调试日志，例如：
