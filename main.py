@@ -20,8 +20,8 @@ from src.extract_email  import (
 from src.file_writer import json_to_markdown
 
 # 你自己的QQ邮箱账号和授权码（建议从环境变量读取，而不是直接写在代码里）
-email_user = "2398188519@qq.com"
-email_pass = "hbyidjrapjocdifb"
+email_user = "**********@qq.com"
+email_pass = "**********"
 
 def get_latest_arxiv_email():
     """
